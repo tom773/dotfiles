@@ -1,9 +1,0 @@
-https://dummyjson.com/products
-
-Accept: application/json;
-Connection: keep-alive
-Content-Type: application/json; charset=utf-8
-User-Agent: VRC
- 
-GET /1
-
