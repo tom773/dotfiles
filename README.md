@@ -21,7 +21,11 @@ sudo apt install stow
 ```
 curl -sS https://starship.rs/install.sh | sh
 ```
+### Fastfetch
 
+```
+brew install fastfetch [MacOS]
+```
 ## Installation
 
 ``` 
@@ -31,5 +35,5 @@ cd ~/.dotfiles
 then
 
 ``` 
-stow .
+stow --adopt .
 ```
