@@ -1,6 +1,6 @@
 # Dotfiles
 
-This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage them.
+This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/software/stow/) to manage them. I use zsh as my shell.
 
 ## Dependencies
 
@@ -26,6 +26,12 @@ curl -sS https://starship.rs/install.sh | sh
 ```
 brew install fastfetch [MacOS]
 ```
+### Oh My Zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
 ## Installation
 
 ``` 
