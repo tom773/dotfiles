@@ -6,20 +6,24 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 
 ### Git
 
-```sudo apt install git
+```
+sudo apt install git
 ```
 
 ### stow
 
-```sudo apt install stow
+```
+sudo apt install stow
 ```
 
 ## Installation
 
-``` $git clone git@github.com/tom773/dotfiles.git 
-    $cd ~/.dotfiles
+``` 
+git clone git@github.com/tom773/dotfiles.git 
+cd ~/.dotfiles
 ```
 then
 
-``` $stow .
+``` 
+stow .
 ```
