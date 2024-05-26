@@ -1,0 +1,72 @@
+{
+ "Week": "2024-03-02",
+ "LastWeek": "",
+ "X": 0.12637541271332875,
+ "Programs": [
+  {
+   "Program": "golang.org/x/tools/gopls",
+   "Version": "v0.14.2",
+   "GoVersion": "go1.22.0",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "counter/main": 28,
+    "gopls/client:vscode": 14,
+    "gopls/completion/latency:\u003c100ms": 24,
+    "gopls/completion/latency:\u003c10ms": 2383,
+    "gopls/completion/latency:\u003c1s": 5,
+    "gopls/completion/latency:\u003c200ms": 3,
+    "gopls/completion/latency:\u003c500ms": 5,
+    "gopls/completion/latency:\u003c50ms": 2380,
+    "gopls/definition/error-latency:\u003c10ms": 12,
+    "gopls/definition/latency:\u003c10ms": 394,
+    "gopls/definition/latency:\u003c1s": 2,
+    "gopls/definition/latency:\u003c500ms": 3,
+    "gopls/definition/latency:\u003c50ms": 1,
+    "gopls/goversion:1.22": 26,
+    "gopls/hover/error-latency:\u003c10ms": 36,
+    "gopls/hover/latency:\u003c10ms": 2621,
+    "gopls/hover/latency:\u003c500ms": 1
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "golang.org/x/tools/gopls",
+   "Version": "v0.15.1",
+   "GoVersion": "go1.22.0",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "gopls/client:vscode": 4,
+    "gopls/completion/latency:\u003c100ms": 2,
+    "gopls/completion/latency:\u003c10ms": 630,
+    "gopls/completion/latency:\u003c1s": 1,
+    "gopls/completion/latency:\u003c500ms": 3,
+    "gopls/completion/latency:\u003c50ms": 402,
+    "gopls/definition/latency:\u003c10ms": 51,
+    "gopls/definition/latency:\u003c50ms": 1,
+    "gopls/goversion:1.22": 6,
+    "gopls/hover/latency:\u003c10ms": 657
+   },
+   "Stacks": {}
+  },
+  {
+   "Program": "github.com/golang/vscode-go/vscgo",
+   "Version": "v0.41.1",
+   "GoVersion": "go1.22.0",
+   "GOOS": "linux",
+   "GOARCH": "amd64",
+   "Counters": {
+    "activation_latency:\u003c1s": 2,
+    "activation_latency:\u003c500ms": 10,
+    "activation_latency:\u003c5s": 2,
+    "inc_counters_duration:\u003c10ms": 14,
+    "inc_counters_num_input:\u003c2": 13,
+    "inc_counters_num_input:\u003c4": 1,
+    "vscgo_install": 1
+   },
+   "Stacks": {}
+  }
+ ],
+ "Config": "v0.17.0"
+}
