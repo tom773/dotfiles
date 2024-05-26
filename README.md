@@ -10,10 +10,16 @@ This repository contains my dotfiles. I use [GNU Stow](https://www.gnu.org/softw
 sudo apt install git
 ```
 
-### stow
+### Stow
 
 ```
 sudo apt install stow
+```
+
+### Starship
+
+```
+curl -sS https://starship.rs/install.sh | sh
 ```
 
 ## Installation
