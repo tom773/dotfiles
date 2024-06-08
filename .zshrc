@@ -109,4 +109,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim='nvim .'
 eval "$(starship init zsh)"
-fastfetch
+LIVE_COUNTER=$(who | wc -l);
+if [ $LIVE_COUNTER -eq 1 ]; then
+     fastfetch
+fi
