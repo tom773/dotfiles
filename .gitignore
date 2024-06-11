@@ -7,3 +7,5 @@
 /.config/nvim-bu-2
 /nvim-bu-2
 /.config/tmux-bu
+.zshenv
+/.config/go/telemetry

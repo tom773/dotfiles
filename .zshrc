@@ -1,10 +1,11 @@
-source ~/.profile
+source ~/.zprofile
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
-
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+if [ -f ~/.zshenv ]; then
+  source ~/.zshenv
+fi
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -109,7 +110,7 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim='nvim .'
 eval "$(starship init zsh)"
-LIVE_COUNTER=$(who | wc -l);
-if [ $LIVE_COUNTER -eq 1 ]; then
-     fastfetch
-fi
+
+fastfetch
+PATH="$HOME/.local/bin:${PATH}"
+export PATH
