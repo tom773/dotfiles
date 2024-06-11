@@ -1,0 +1,79 @@
+@define-color fg #f5f5f5;
+@define-color bordercolor #888CA7;
+@define-color disabled #a5a5a5;
+@define-color alert #f53c3c;
+@define-color activegreen #8fb666;
+
+*{
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: "JetBrains Mono ExtraBold", FontAwesome, Roboto;
+}
+
+window#waybar {
+    padding: 20px;
+    background: rgba(40, 40, 40, 0.4);
+    color: @fg;
+    border-radius: 9999px;
+    transition: background-color 0.5s ease;
+    color: white;
+}
+
+/* Workspaces - Touch these and break everything, I dare you*/
+#workspaces {
+    background: rgba(153, 0, 51, 0.2);
+    border-radius: 9999px;
+}
+
+#workspaces button {
+    color: @fg;
+}
+
+#workspaces button.urgent {
+    color: @alert;
+}
+#workspaces button.empty {
+    color: @disabled;
+}
+
+#workspaces button.active {
+    color: #F2C187;
+}
+
+#workspaces button {
+    padding: 0px 15px;
+    margin: 0px 2px;
+}
+
+/* Customs */
+#custom-wofi, #custom-spotify, #custom-twitch, #custom-reddit, #custom-firefox, #custom-terminal, #custom-chatgpt{
+    padding: 0px 10px;
+    margin: 0px 2px;
+    font-size: 16px;
+}
+#custom-power{
+    padding: 0px 10px;
+    margin: 0px 2px;
+    font-size: 16px;
+    color: @alert;
+}
+
+/* Built-Ins */
+#clock, #network, #battery, #pulseaudio, #memory, #cpu, #disk, #temperature {
+    padding: 0px 10px;
+    margin: 0px 2px;
+}
+
+/* Bar */
+#bar > * {
+    margin: 0px 2px;
+    padding: 5px;
+}
+
+#bar > *:first-child {
+    margin-left: 0;
+}
+
+#bar > *:last-child {
+    margin-right: 0;
+}

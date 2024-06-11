@@ -1,0 +1,99 @@
+{
+    "layer": "top",
+    "height": 30,
+    "position": "top",
+    "margin-left": 20,
+    "margin-right": 20,
+    "margin-top": 20,
+    "spacing": 1,
+
+    "reload_style_on_change": true,
+
+    "modules-left": ["clock", "custom/terminal", "custom/firefox", "custom/chatgpt", "custom/reddit", "custom/twitch", "custom/spotify"],
+    "modules-center": ["custom/wofi", "hyprland/workspaces"],
+    "modules-right": ["network", "pulseaudio", "cpu", "temperature", "memory", "disk", "custom/power"],
+    
+    "hyprland/workspaces": {
+        "onclick": "activate",
+        "all-outputs": true,
+        "disable-scroll": true,
+		"format": "{name} {icon}",
+		"format-icons": {
+			"active": " ",
+			"default": " "
+		},
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+        },
+    },
+    "temperature": {
+        "format": "\uf2c9 {temperatureC}°C",
+        "on-click": "wezterm start -- htop",
+    },
+    "disk": {
+        "interval": 15,
+        "format": "{percentage_used}% 󰋊",
+        "on-click": "wezterm start -- godisk",
+    },
+
+    "clock": {
+        "format": "{:%H:%M:%S}",
+        "timezone": "Australia/Sydney",
+        "interval": 1,
+    },
+
+    "network": {
+        "format-wifi": "\uf1eb \u00a0 {essid} ({signalStrength}%)",
+        "format-ethernet": "\udb80\ude00 {ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor",
+    },
+    "cpu": {
+        "format": "\udb80\udf5b {usage}%",
+        "on-click": "wezterm start -- htop",
+    },
+    "memory": {
+        "format": "\uefc5 {percentage}%",
+        "on-click": "wezterm start -- htop",
+    },
+    "pulseaudio": {
+        "format": "\ue638 {volume}%",
+        "interval": 1,
+        "on-click": "pavucontrol",
+    },
+    // Customs
+    "custom/terminal": {
+        "format": "\ue795",
+        "on-click": "wezterm",
+    },
+    "custom/firefox": {
+        "format": "\udb80\ude39",
+        "on-click": "firefox",
+    },
+    "custom/chatgpt": {
+        "format": "\uea79",
+        "on-click": "firefox https://chat.openai.com/",
+    },
+    "custom/reddit": {
+        "format": "\uf281",
+        "on-click": "firefox https://www.reddit.com/",
+    },
+    "custom/power": {
+        "format": "\uf011",
+        "on-click": "powermenu",
+    },
+    "custom/twitch": {
+        "format": "\uf1e8",
+        "on-click": "firefox https://www.twitch.tv/",
+    },
+    "custom/spotify": {
+        "format": "\uf1bc",
+        "on-click": "spotify-launcher",
+    },
+    "custom/wofi": {
+        "format": "\uf002",
+        "on-click": "wofi -c ~/dotfiles/wofi/config --show drun",
+    },
+}
