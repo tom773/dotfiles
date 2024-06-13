@@ -82,7 +82,7 @@
     },
     "custom/power": {
         "format": "\uf011",
-        "on-click": "powermenu",
+        "on-click": "pkill powermenu || ~/dotfiles/tools/powermenu",
     },
     "custom/twitch": {
         "format": "\uf1e8",

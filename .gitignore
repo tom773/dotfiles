@@ -9,3 +9,4 @@
 /.config/tmux-bu
 .zshenv
 /.config/go/telemetry
+/tools
